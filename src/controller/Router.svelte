@@ -1,10 +1,9 @@
 <script lang="ts">
     import { type ComponentType } from 'svelte'
     import { _, locale } from 'svelte-i18n'
-    import { logger, initIndexedDb } from '@gozeltr/standard-frontend'
+    import { logger, initIndexedDb, os } from '@gozel-core/standard-js-frontend'
     import { metapatcher } from 'metapatcher'
-    import { router, type RouteMap, type RouteOpts } from '@gozeltr/standard-svelte'
-    import { os } from '@gozeltr/standard-frontend'
+    import { router, type RouteMap, type RouteOpts } from '@gozel-core/standard-svelte'
     import { BROWSER } from 'esm-env'
 
     export let path: string

@@ -1,5 +1,5 @@
 <script type="ts">
-    import { loadingBar } from '@gozeltr/standard-svelte'
+    import { loadingBar } from '@gozel-core/standard-svelte'
 
     export let bgClasses = 'bg-emerald-500'
 </script>

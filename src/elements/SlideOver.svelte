@@ -1,6 +1,6 @@
 <script lang="ts">
     import { sineIn, sineOut } from 'svelte/easing'
-    import { outsideClick } from '@gozeltr/standard-svelte'
+    import { outsideClick } from '@gozel-core/standard-svelte'
 
     export let panelTitle = ''
     export let isActive: boolean = false

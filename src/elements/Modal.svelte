@@ -2,7 +2,7 @@
     import { sineIn, sineOut } from 'svelte/easing'
     import { fade } from 'svelte/transition'
     import { createEventDispatcher, onMount } from 'svelte'
-    import { outsideClick } from '@gozeltr/standard-svelte'
+    import { outsideClick } from '@gozel-core/standard-svelte'
     import { BROWSER } from 'esm-env'
 
     export let isActive = false

@@ -2,8 +2,7 @@
     import { sineIn, sineOut } from 'svelte/easing'
     import { fade } from 'svelte/transition'
     import { createEventDispatcher } from 'svelte'
-    import { prompt } from '@gozeltr/standard-svelte'
-    import { outsideClick } from '@gozeltr/standard-svelte'
+    import { prompt, outsideClick } from '@gozel-core/standard-svelte'
 
     const dispatch = createEventDispatcher()
 

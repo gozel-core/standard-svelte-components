@@ -1,7 +1,7 @@
 <script lang="ts">
     import { sineIn, sineOut } from 'svelte/easing'
     import { fly } from 'svelte/transition'
-    import { notifications } from '@gozeltr/standard-svelte'
+    import { notifications } from '@gozel-core/standard-svelte'
 </script>
 
 <div aria-live="assertive" class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:items-start sm:p-6">
