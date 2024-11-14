@@ -41,6 +41,7 @@
   },
   "scripts": {
     "format": "exit 0",
+    "test": "exit 0",
     "build": "svelte-package --types -i ./src -o ./dist",
     "prepare": "husky"
   },
