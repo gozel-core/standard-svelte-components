@@ -1,0 +1,86 @@
+{
+  "name": "@gozel-core/standard-svelte-components",
+  "version": "0.1.7",
+  "description": "",
+  "repository": "https://github.com/gozel-core/standard-svelte-components.git",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    "./Router.svelte": {
+      "types": "./dist/controller/Router.svelte.d.ts",
+      "svelte": "./dist/controller/Router.svelte"
+    },
+    "./Banner.svelte": {
+      "types": "./dist/elements/Banner.svelte.d.ts",
+      "svelte": "./dist/elements/Banner.svelte"
+    },
+    "./LoadingBar.svelte": {
+      "types": "./dist/elements/LoadingBar.svelte.d.ts",
+      "svelte": "./dist/elements/LoadingBar.svelte"
+    },
+    "./Button.svelte": {
+      "types": "./dist/elements/Button.svelte.d.ts",
+      "svelte": "./dist/elements/Button.svelte"
+    },
+    "./Prompt.svelte": {
+      "types": "./dist/elements/Prompt.svelte.d.ts",
+      "svelte": "./dist/elements/Prompt.svelte"
+    },
+    "./Notifications.svelte": {
+      "types": "./dist/elements/Notifications.svelte.d.ts",
+      "svelte": "./dist/elements/Notifications.svelte"
+    },
+    "./Modal.svelte": {
+      "types": "./dist/elements/Modal.svelte.d.ts",
+      "svelte": "./dist/elements/Modal.svelte"
+    },
+    "./SlideOver.svelte": {
+      "types": "./dist/elements/SlideOver.svelte.d.ts",
+      "svelte": "./dist/elements/SlideOver.svelte"
+    }
+  },
+  "scripts": {
+    "format": "exit 0",
+    "build": "svelte-package --types -i ./src -o ./dist",
+    "prepare": "husky"
+  },
+  "files": [
+    ".npmrc",
+    "dist/*",
+    "package.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20.x"
+  },
+  "license": "UNLICENSED",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@gozel-core/standard-js-frontend": "^1.0.1",
+    "@gozel-core/standard-svelte": "^1.0.0",
+    "@sveltejs/package": "^2.3.2",
+    "@tsconfig/strictest": "^2.0.5",
+    "esm-env": "^1.0.0",
+    "metapatcher": "^4.3.3",
+    "svelte": "^5.2.0",
+    "svelte-i18n": "^4.0.0",
+    "typescript": "^5.5.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.5",
+    "semantic-release": "24.1.0"
+  },
+  "peerDependencies": {
+    "@gozel-core/standard-js-frontend": "^1.0.1",
+    "@gozel-core/standard-svelte": "^1.0.0",
+    "metapatcher": "^4.3.3",
+    "svelte": "^5.2.0",
+    "svelte-i18n": "^4.0.0"
+  }
+}
